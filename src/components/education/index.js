@@ -7,7 +7,7 @@ class index extends Component {
             <div className="education">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 content">
+                        <div className="col-12 content text-center">
                             <h4>Education</h4>
                             <h5><span>B.Sc.</span> in Software Engineering</h5>
                             <h5><span>Daffodil International University</span></h5>

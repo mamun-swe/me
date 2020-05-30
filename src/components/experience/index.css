@@ -1,22 +1,29 @@
-
-
 .exp .content h4 {
     color: #ea4c89;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-family: "Roboto-light";
 }
 
 .exp .content h5 {
     color: #ea4c89;
-    line-height: 1.4rem;
+    margin-bottom: 10px;
     font-family: "Roboto-light";
 }
 
-.exp .content h5 span {
+.exp .content p {
     color: #fff;
     font-size: 12px;
+    margin-bottom: 5px;
 }
 
-.exp .content {
-    padding-top: 50px;
+@media(max-width: 576px) {
+    .exp .content {
+        padding-top: 50px;
+    }
+}
+
+@media(min-width: 576px) {
+    .exp .content {
+        padding-top: 100px;
+    }
 }

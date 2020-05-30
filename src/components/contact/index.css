@@ -1,5 +1,9 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+}
 
-.contact .content h4 {
+.contact .content h1 {
     color: #ea4c89;
     margin-bottom: 20px;
     font-family: "Roboto-light";
@@ -47,4 +51,10 @@
 
 .contact .content {
     padding-top: 50px;
+}
+
+@media(max-width: 992px){
+    .contact{
+        margin-top: -70px;
+    }
 }

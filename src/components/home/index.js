@@ -13,7 +13,7 @@ class index extends Component {
             <div className="home">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-12 text-center">
                             <h1>Hi,</h1>
                             <h1>I'm <Link to="/about">Abdullah Al Mamun</Link>,</h1>
                             <h1><Link to="/education">Software Engineer</Link>,</h1>
