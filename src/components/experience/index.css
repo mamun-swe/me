@@ -1,0 +1,31 @@
+.exp .btn {
+    color: #fff;
+    font-size: 60px;
+    transition: 0.3s;
+    padding: 0px 19px;
+}
+
+.exp .btn:hover {
+    color: #ea4c89;
+}
+
+.exp .content h4 {
+    color: #ea4c89;
+    margin-bottom: 20px;
+    font-family: "Roboto-light";
+}
+
+.exp .content h5 {
+    color: #ea4c89;
+    line-height: 1.4rem;
+    font-family: "Roboto-light";
+}
+
+.exp .content h5 span {
+    color: #fff;
+    font-size: 12px;
+}
+
+.exp .content {
+    padding-top: 50px;
+}

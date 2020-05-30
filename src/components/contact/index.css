@@ -1,0 +1,60 @@
+.contact .btn {
+    color: #fff;
+    font-size: 60px;
+    transition: 0.3s;
+    padding: 0px 19px;
+}
+
+.contact .btn:hover {
+    color: #ea4c89;
+}
+
+.contact .content h4 {
+    color: #ea4c89;
+    margin-bottom: 20px;
+    font-family: "Roboto-light";
+}
+
+.contact .content h5 {
+    color: #ea4c89;
+    line-height: 1.4rem;
+    font-family: "Roboto-light";
+}
+
+.contact .content .social a {
+    margin-right: 20px;
+}
+
+.contact .content .social i {
+    font-size: 15px;
+    color: #757474;
+    padding: 10px 14px;
+    transition: 0.3s;
+    border: 1px solid #757474;
+}
+
+.contact .content .social i:hover {
+    color: #ea4c89;
+    border: 1px solid #ea4c89;
+}
+
+.contact .content .social .fa-linkedin {
+    padding: 10px 11px;
+}
+
+.contact .content .social .fa-github {
+    padding: 10px 11px;
+}
+
+.contact .content h5 a {
+    color: #757474;
+    transition: 0.3s;
+}
+
+.contact .content h5 a:hover {
+    color: #ea4c89;
+}
+
+.contact .content {
+    padding-top: 50px;
+}
