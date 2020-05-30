@@ -1,13 +1,4 @@
-.exp .btn {
-    color: #fff;
-    font-size: 60px;
-    transition: 0.3s;
-    padding: 0px 19px;
-}
 
-.exp .btn:hover {
-    color: #ea4c89;
-}
 
 .exp .content h4 {
     color: #ea4c89;

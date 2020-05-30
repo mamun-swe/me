@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "./index.css";
-import { Link } from 'react-router-dom';
 
 class index extends Component {
     render() {
@@ -8,12 +7,6 @@ class index extends Component {
             <div className="education">
                 <div className="container">
                     <div className="row">
-
-                        <div className="col-12 text-right pt-sm-5">
-                            <Link to="/" className="btn shadow-none rounded-circle">&times;</Link>
-                        </div>
-
-
                         <div className="col-12 content">
                             <h4>Education</h4>
                             <h5><span>B.Sc.</span> in Software Engineering</h5>
