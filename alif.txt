@@ -1,0 +1,5 @@
+1. define column correct name 
+2. define table name
+3. Customer Details CD is not correct for join
+4. OD is not correct for define a table
+5. CustomerId not correct 

@@ -1,0 +1,22 @@
+.App {
+    min-height: 100vh;
+    background: #000;
+}
+
+@media(min-width: 992px) {
+    .App .main {
+        padding-left: 300px;
+    }
+}
+
+@media(min-width: 1380px) {
+    .App .main {
+        padding-left: 380px;
+    }
+}
+
+@media(min-width: 1480px) {
+    .App .main {
+        padding-left: 550px;
+    }
+}
