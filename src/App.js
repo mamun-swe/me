@@ -4,28 +4,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
-import SideMenu from './components/Sidemenu';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Experience from './pages/Experience';
+import Master from './pages/Master';
+import Login from './pages/Admin/Login';
+import Dashboard from './pages/Admin/Dashboard';
 
 function App() {
   return (
     <div className="App">
 
       <Router>
-        <SideMenu />
-        <div className="main">
+        <div>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/experience" component={Experience} />
-            <Route component={Home} />
+            <Route exact path="/" component={Master} />
+            <Route path="/login" component={Login} />
+            <Route path="/dashboard" component={Dashboard} />
+            <Route component={Master} />
           </Switch>
         </div>
       </Router>
+
     </div>
   );
 }

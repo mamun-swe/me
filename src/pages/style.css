@@ -160,6 +160,22 @@
     }
 }
 
+/* Projects */
+
+.projects .technology_header h5 {
+    font-weight: 900;
+}
+
+.projects .project-card {
+    height: 120px;
+    margin-bottom: 30px;
+    background: rgba(85, 85, 85, 0.226);
+}
+
+.projects .project-card p {
+    font-size: 16px;
+}
+
 /* Experience */
 
 .experience .jobs .job h3 {
@@ -173,7 +189,7 @@
     font-family: 'Bebas Neue', cursive;
 }
 
-.experience .jobs .job p{
+.experience .jobs .job p {
     font-size: 14px;
     font-weight: 900;
     text-transform: uppercase;

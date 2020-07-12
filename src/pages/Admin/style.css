@@ -1,0 +1,61 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+}
+
+.login .card {
+    background: rgba(85, 85, 85, 0.226);
+}
+
+.login .card h4 {
+    color: #555;
+}
+
+.login .card small {
+    color: #555;
+}
+
+.login .card .form-control {
+    font-size: 14px;
+    background: #555;
+    border: 0;
+    color: #fff;
+}
+
+.login .card .btn {
+    font-weight: 900;
+    background: #555;
+    color: #fff;
+}
+
+@media(max-width: 576px) {
+    .login .card {
+        width: 90vw;
+    }
+}
+
+@media(min-width: 576px) {
+    .login .card {
+        width: 480px;
+    }
+}
+
+/* Dashboard */
+.dashboard h1{
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.dashboard .btn{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    transition: 0.4s;
+}
+.dashboard .btn:hover{
+    color: #555;
+    background: #fff;
+}

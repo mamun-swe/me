@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 .flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,6 +11,7 @@
   align-items: center;
   height: 100%;
 }
+
 .flex-column {
   -ms-flex-direction: column !important;
   -webkit-box-orient: vertical !important;
