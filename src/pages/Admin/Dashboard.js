@@ -46,6 +46,21 @@ const Dashboard = () => {
             })
     }
 
+    // Delete Project
+    const deleteProject = (data) => {
+        axios.delete(`${URL}project/${data}`)
+            .then(res => {
+                if (res.status === 200) {
+                    fetchData()
+                }
+            })
+            .catch(err => {
+                if (err) {
+                    console.log(err)
+                }
+            })
+    }
+
     return (
         <div className="dashboard">
             <div className="container py-4 py-lg-5">
@@ -71,7 +86,7 @@ const Dashboard = () => {
                                     <Link to={`edit/${project._id}`} type="button" className="btn rounded-0 shadow-none border-0">
                                         <i className="fas fa-pen"></i>
                                     </Link>
-                                    <button type="button" className="btn rounded-0 shadow-none border-0">
+                                    <button type="button" className="btn rounded-0 shadow-none border-0" onClick={() => deleteProject(project._id)}>
                                         <i className="fas fa-trash"></i>
                                     </button>
                                 </div>
