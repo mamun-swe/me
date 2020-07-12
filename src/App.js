@@ -7,6 +7,7 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Master from './pages/Master';
 import Login from './pages/Admin/Login';
 import Dashboard from './pages/Admin/Dashboard';
+import Edit from './pages/Admin/Edit';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/" component={Master} />
             <Route path="/login" component={Login} />
             <Route path="/dashboard" component={Dashboard} />
+            <Route path="/edit/:id" component={Edit} />
             <Route component={Master} />
           </Switch>
         </div>

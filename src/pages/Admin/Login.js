@@ -3,7 +3,7 @@ import './style.css';
 import { useForm } from "react-hook-form";
 
 const Login = (props) => {
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
         console.log(data)
         props.history.push('/dashboard')
