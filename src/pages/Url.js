@@ -1,3 +1,3 @@
 
-const myUrl = "http://localhost:9000/api/"
+const myUrl = "https://portfolio-backend-app.herokuapp.com/api/"
 export default myUrl
