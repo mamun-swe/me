@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
+import axios from 'axios';
 import { useForm } from "react-hook-form";
+import URL from '../Url';
 
 const Login = (props) => {
     const { register, handleSubmit, errors } = useForm();
-    const onSubmit = data => {
-        console.log(data)
-        props.history.push('/dashboard')
+    const [loading, setLoading] = useState(false)
+    const [faild, setFailed] = useState(false)
 
+    const onSubmit = data => {
+        setLoading(true)
+        axios.post(`${URL}login`, data)
+            .then(res => {
+                if (res.status === 200 && res.data.token) {
+                    setLoading(false)
+                    localStorage.setItem('access_token', res.data.token)
+                    props.history.push('/dashboard')
+                }
+                if (res.status === 204) {
+                    setFailed(true)
+                    setLoading(false)
+                }
+            })
     }
 
     return (
@@ -16,6 +31,9 @@ const Login = (props) => {
                 <div className="card border-0">
                     <div className="card-header p-4 text-center">
                         <h4 className="mb-0"><b>Login</b></h4>
+                        {faild ? (
+                            <p className="text-white mb-0">E-mail or Password incorrect.</p>
+                        ) : null}
                     </div>
                     <div className="card-body p-4 pb-lg-5">
                         <form onSubmit={handleSubmit(onSubmit)}>
@@ -51,15 +69,20 @@ const Login = (props) => {
                                     className="form-control shadow-none"
                                     ref={register({
                                         minLength: {
-                                            value: 4,
-                                            message: "Please enter minimum 4 characters",
+                                            value: 8,
+                                            message: "Please enter minimum 8 characters",
                                         },
                                         required: "Please enter password",
                                     })}
                                 />
                             </div>
 
-                            <button type="submit" className="btn btn-block shadow-none">Submit</button>
+                            <button type="submit" className="btn btn-block shadow-none btn-dark">
+                                {loading ? (
+                                    <p className="mb-0"><i className="fa fa-spinner text-white mr-2 fa-spin"></i>Loading ...</p>
+                                ) : <p className="mb-0">Submit</p>
+                                }
+                            </button>
                         </form>
                     </div>
                 </div>

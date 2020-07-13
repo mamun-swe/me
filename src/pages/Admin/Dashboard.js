@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import URL from '../Url';
 import { Link } from 'react-router-dom';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
     const { register, handleSubmit, errors } = useForm();
     const [show, setShow] = useState(false);
     const [projects, setProjects] = useState([]);
@@ -30,8 +30,14 @@ const Dashboard = () => {
 
     // Submit Project
     const onSubmit = data => {
+        // Header 
+        const header = {
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("access_token")
+            }
+        }
         setLoading(true)
-        axios.post(`${URL}project`, data)
+        axios.post(`${URL}project`, data, header)
             .then(res => {
                 if (res.status === 201) {
                     fetchData()
@@ -48,7 +54,13 @@ const Dashboard = () => {
 
     // Delete Project
     const deleteProject = (data) => {
-        axios.delete(`${URL}project/${data}`)
+        // Header 
+        const header = {
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("access_token")
+            }
+        }
+        axios.delete(`${URL}project/${data}`, header)
             .then(res => {
                 if (res.status === 200) {
                     fetchData()
@@ -61,6 +73,31 @@ const Dashboard = () => {
             })
     }
 
+    // Logout
+    const logout = () => {
+        // Header 
+        const header = {
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("access_token")
+            }
+        }
+
+        axios.get(URL + "logout", header)
+            .then(res => {
+                if (res.status === 200) {
+                    localStorage.clear()
+                    props.history.push('/')
+                }
+            })
+            .catch(err => {
+                if (err.response.status === 401) {
+                    localStorage.clear()
+                    props.history.push('/')
+                }
+            })
+    }
+
+
     return (
         <div className="dashboard">
             <div className="container py-4 py-lg-5">
@@ -71,7 +108,7 @@ const Dashboard = () => {
                             <div><h1 className="mb-0">Website - {projects.length}</h1></div>
                             <div className="ml-auto">
                                 <button type="button" className="btn shadow-none" onClick={handleShow}><i className="fas fa-plus"></i></button>
-                                <button type="button" className="btn shadow-none logout_btn"><i className="fas fa-power-off"></i></button>
+                                <button type="button" className="btn shadow-none logout_btn" onClick={logout}><i className="fas fa-power-off"></i></button>
                             </div>
                         </div>
                     </div>

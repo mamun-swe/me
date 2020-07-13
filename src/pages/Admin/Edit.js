@@ -15,7 +15,13 @@ const Edit = (props) => {
 
     // fetch project
     const fetchProject = () => {
-        axios.get(`${URL}/project/${props.match.params.id}`)
+        // Header 
+        const header = {
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("access_token")
+            }
+        }
+        axios.get(`${URL}/project/${props.match.params.id}`, header)
             .then(res => {
                 setData(res.data.project)
             })
@@ -29,7 +35,13 @@ const Edit = (props) => {
     // Update Project
     const onSubmit = data => {
         setLoading(true)
-        axios.put(`${URL}project/${props.match.params.id}`, data)
+        // Header 
+        const header = {
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("access_token")
+            }
+        }
+        axios.put(`${URL}project/${props.match.params.id}`, data, header)
             .then(res => {
                 if (res.status === 200) {
                     fetchProject()
