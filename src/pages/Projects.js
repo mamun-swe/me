@@ -3,9 +3,6 @@ import './style.css';
 import axios from 'axios';
 import URL from './Url';
 
-import GithubIcon from '../assets/icons/github.png';
-import LinkIcon from '../assets/icons/link.png';
-
 const Projects = () => {
     const [projects, setProjects] = useState([]);
 
@@ -43,9 +40,9 @@ const Projects = () => {
                             <div className="card project-card">
                                 <div className="flex-center flex-column text-center p-2">
                                     <div className="d-flex">
-                                        <div><a href={project.repo_link}><img src={GithubIcon} alt="..." /></a></div>
+                                        <div><a href={project.repo_link} className="btn btn-sm shadow-none"><i class="fab fa-github text-muted"></i></a></div>
                                         <div className="pl-1">
-                                            <a href={project.live_link}><img src={LinkIcon} alt="..." /></a>
+                                            <a href={project.live_link} className="btn btn-sm shadow-none"><i class="fas fa-link text-muted"></i></a>
                                         </div>
                                     </div>
                                     <p className="text-capitalize mt-3 mb-0">{project.name}</p>
