@@ -14,9 +14,10 @@ const Experience = () => {
 
                             {/* Job */}
                             <div className="job mb-5">
-                                <h3 className="mb-0 text-capitalize">dhaka boss ( PVT ) Ltd.</h3>
-                                <h4 className="text-capitalize mb-0">software engineer ( back-end )</h4>
-                                <p>10 MAY, 2020 - Present</p>
+                                <h3 className="mb-0 text-capitalize">Hear Us Project Inc. NFP</h3>
+                                <h4 className="text-capitalize mb-0">software developer</h4>
+                                <p>Greater Chicago Area, USA</p>
+                                <p>4 AUG, 2020 - Present</p>
                             </div>
 
                         </div>
