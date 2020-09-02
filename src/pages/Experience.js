@@ -16,7 +16,7 @@ const Experience = () => {
                             <div className="job mb-5">
                                 <h3 className="mb-0 text-capitalize">Hear Us Project Inc. NFP</h3>
                                 <h4 className="text-capitalize mb-0">software developer</h4>
-                                <p>Greater Chicago Area, USA</p>
+                                <p className="text-capitalize mb-0">Greater Chicago Area, USA</p>
                                 <p>4 AUG, 2020 - Present</p>
                             </div>
 

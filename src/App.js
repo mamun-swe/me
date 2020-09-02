@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
+import PrivateRoute from './utils/PrivateRoute';
+
 import Master from './pages/Master';
 import Login from './pages/Admin/Login';
 import Dashboard from './pages/Admin/Dashboard';
