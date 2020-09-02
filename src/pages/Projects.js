@@ -5,6 +5,7 @@ import URL from './Url';
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         fetchData()
@@ -12,9 +13,11 @@ const Projects = () => {
 
     // Fetch Projects
     const fetchData = () => {
+        setLoading(true)
         axios.get(`${URL}project`)
             .then(res => {
                 setProjects(res.data.projects)
+                setLoading(false)
             })
     }
 
@@ -35,21 +38,27 @@ const Projects = () => {
                     </div>
 
                     {/* Projects */}
-                    {projects.map((project, i) =>
-                        <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={i}>
-                            <div className="card project-card">
-                                <div className="flex-center flex-column text-center p-2">
-                                    <div className="d-flex">
-                                        <div><a href={project.repo_link} className="btn btn-sm shadow-none"><i class="fab fa-github text-muted"></i></a></div>
-                                        <div className="pl-1">
-                                            <a href={project.live_link} className="btn btn-sm shadow-none"><i class="fas fa-link text-muted"></i></a>
+                    {loading ?
+                        <div class="spinner-border text-warning" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        :
+                        projects.map((project, i) =>
+                            <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={i}>
+                                <div className="card project-card">
+                                    <div className="flex-center flex-column text-center p-2">
+                                        <div className="d-flex">
+                                            <div><a href={project.repo_link} className="btn btn-sm shadow-none"><i class="fab fa-github text-muted"></i></a></div>
+                                            <div className="pl-1">
+                                                <a href={project.live_link} className="btn btn-sm shadow-none"><i class="fas fa-link text-muted"></i></a>
+                                            </div>
                                         </div>
+                                        <p className="text-capitalize mt-3 mb-0">{project.name}</p>
                                     </div>
-                                    <p className="text-capitalize mt-3 mb-0">{project.name}</p>
                                 </div>
                             </div>
-                        </div>
-                    )}
+                        )
+                    }
 
                 </div>
             </div>
