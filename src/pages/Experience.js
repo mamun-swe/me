@@ -20,6 +20,18 @@ const Experience = () => {
                                 <p>4 AUG, 2020 - Present</p>
                             </div>
 
+                            <div className="job mb-5">
+                                <h3 className="mb-0 text-capitalize">Dhaka Boss</h3>
+                                <h4 className="text-capitalize mb-0">Backend developer</h4>
+                                <p className="text-capitalize mb-0">Mirpur DOHS, Dhaka</p>
+                            </div>
+
+                            <div className="job mb-5">
+                                <h3 className="mb-0 text-capitalize">Web Cloudex</h3>
+                                <h4 className="text-capitalize mb-0">software developer</h4>
+                                <p className="text-capitalize mb-0">Mirpur DOHS, Dhaka</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
