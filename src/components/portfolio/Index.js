@@ -13,7 +13,7 @@ const Index = () => {
             link: 'https://eazybest.com',
             git: 'https://github.com/Mamun-swe/Eazybest',
             desc: 'EasyBest is a multi-vendor e-commerce platform. It\'s now in the development stage.',
-            stack: 'React, Next.JS, Express.JS, MongoDB'
+            stack: 'Next.JS, Redux, Express.JS, MongoDB'
         },
         {
             title: 'Chithi',
@@ -36,8 +36,16 @@ const Index = () => {
             banner: Images.xAdmin,
             link: 'https://x-admin.vercel.app',
             git: 'https://github.com/Mamun-swe/x-admin',
-            desc: 'xAdmin is an admin templete.',
-            stack: 'React, React, Bootstrap, SASS'
+            desc: 'X-Admin is an admin templete.',
+            stack: 'React, Bootstrap, SASS'
+        },
+        {
+            title: 'GrapFood',
+            banner: Images.Grapfood,
+            link: 'https://grapfood.vercel.app',
+            git: 'https://github.com/Mamun-swe/grapfood-react',
+            desc: 'GrapFood in an online food seller application.',
+            stack: 'React, Redux, Express.JS, MongoDB'
         }
     ]
 

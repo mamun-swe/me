@@ -1,0 +1,24 @@
+@import "../../App.scss";
+
+.go-to-top {
+    .btn {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        color: $primary;
+        padding: 8px 10px;
+        transition: 0.4s all;
+        background: #242f41a6;
+        z-index: 9999;
+
+        &:hover {
+            color: #000;
+            background: $primary;
+        }
+
+        @media (min-width: 992px) {
+            right: 40px;
+            bottom: 40px;
+        }
+    }
+}

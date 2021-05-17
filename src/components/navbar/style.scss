@@ -1,0 +1,90 @@
+@import "../../App.scss";
+
+.custom-navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    background: none;
+
+    /* Desktop navbar */
+    .navbar-contaier {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        // Logo
+        img {
+            max-height: 50px;
+        }
+
+        // Desktop items
+        .desktop-items {
+            ul {
+                padding: 0;
+                padding-top: 6px;
+                margin: auto !important;
+
+                li {
+                    list-style: none;
+                    display: inline-block;
+
+                    .btn {
+                        color: $secondary;
+                        font-size: 17px;
+                        font-weight: 400;
+                        margin-left: 10px;
+                        padding: 5px 20px;
+                        transition: 0.3s all;
+                        text-decoration: none;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 992px) {
+                display: none !important;
+            }
+        }
+
+        // Menu bar
+        .menu-bar-container {
+            .btn {
+                padding: 4px;
+                color: #000;
+                margin-top: 5px;
+                background: $primary;
+            }
+        }
+    }
+}
+
+// Fixed navbar after scroll
+.scrolled {
+    position: fixed;
+    background: #111a28;
+    animation: moveDown 0.5s ease-in-out;
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-5rem);
+    }
+
+    to {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(0rem);
+    }
+}

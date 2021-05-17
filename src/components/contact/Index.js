@@ -22,7 +22,7 @@ const Index = () => {
                         <p className="mb-3">live:c0fc53cd8e6c958a</p>
 
                         <h6>Social</h6>
-                        <p className="mb-3">Facebook - </p>
+                        <p className="mb-3">Facebook - mamun.swe.277</p>
 
                         <h6>Address</h6>
                         <p className="mb-3">Ashulia, Savar, Dhaka</p>

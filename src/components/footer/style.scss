@@ -1,0 +1,12 @@
+@import "../../App.scss";
+
+.custom-footer-container {
+    padding-bottom: 30px;
+
+    h6 {
+        font-size: 16px;
+        font-weight: 400;
+        word-spacing: 2px;
+        color: $secondary;
+    }
+}
