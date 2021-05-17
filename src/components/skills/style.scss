@@ -1,0 +1,67 @@
+@import "../../App.scss";
+
+.custom-skills-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    h2 {
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .btn {
+        color: $secondary;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 6px 20px;
+        margin-right: 10px;
+        transition: 0.34s all;
+        border: 2px solid $primary;
+
+        &:hover {
+            color: #000;
+            background: $primary;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .active {
+        color: #000;
+        background: $primary;
+    }
+
+    .card {
+        overflow: hidden;
+        border-radius: 6px;
+        margin-bottom: 25px;
+        background: #242f41a6;
+
+        .card-body {
+            padding: 20px;
+
+            h5 {
+                font-weight: 600;
+                color: $secondary;
+                margin-bottom: 0;
+            }
+        }
+
+        .boder {
+            height: 8px;
+            border-radius: 4px;
+            background: $primary;
+        }
+
+        @media (min-width: 992px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (min-width: 567px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

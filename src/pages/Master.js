@@ -1,22 +1,12 @@
-import React from 'react';
-
-
-import SideMenu from '../components/Sidemenu';
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Projects from '../pages/Projects';
-import Experience from '../pages/Experience';
-import { Switch, Route } from 'react-router-dom';
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import Home from './home/Index'
 
 const Master = () => {
     return (
-        <div className="master main">
-            <SideMenu />
+        <div>
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/projects" component={Projects} />
-                <Route exact path="/experience" component={Experience} />
             </Switch>
         </div>
     );

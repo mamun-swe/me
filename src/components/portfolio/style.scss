@@ -1,0 +1,101 @@
+@import "../../App.scss";
+
+.custom-portfolio-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    h2 {
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .card {
+        overflow: hidden;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        background: #242f41a6;
+
+        .card-img-container {
+            height: 180px;
+            overflow: hidden;
+
+            img {
+                min-width: 100%;
+                min-height: 180px;
+                transition: 0.4s all;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+        }
+
+        .card-body {
+            .content {
+                min-height: 170px;
+
+                a {
+                    font-size: 23px;
+                    font-weight: 700;
+                    color: $secondary;
+                    text-decoration: none;
+                    transition: 0.4s all;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-top: 10px;
+                    color: $secondary;
+                    line-height: 1.5rem;
+                    word-spacing: 3px;
+
+                    span {
+                        color: $primary;
+                        font-weight: 600;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .btn {
+                color: $secondary;
+                padding: 5.5px 8px;
+                margin-right: 5px;
+                transition: 0.3s all;
+                background: #111a28;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        &:hover {
+            img {
+                -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+            }
+        }
+    }
+
+    .show-more-btn {
+        color: $secondary;
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 4px;
+        padding: 10px 30px;
+        transition: 0.3s all;
+        border: 2px solid $primary;
+
+        &:hover {
+            background: $primary;
+        }
+    }
+
+    @media (min-width: 567px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
