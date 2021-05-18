@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './style.scss'
 
-const Index = () => {
+const Index = (props) => {
     const [active, setActive] = useState('web')
 
     const webSkills = {
@@ -52,7 +52,7 @@ const Index = () => {
     }
 
     return (
-        <div className="custom-skills-container">
+        <div className="custom-skills-container" ref={props.refProp}>
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center text-lg-left mb-4">

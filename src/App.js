@@ -6,18 +6,19 @@ import {
   Route
 } from 'react-router-dom'
 import Master from './pages/Master'
+import ScrollToTop from './components/scrollTop/Index'
 
 function App() {
   return (
     <div className="App">
 
       <Router>
-        <div>
+        <ScrollToTop>
           <Switch>
             <Route exact path="/" component={Master} />
             <Route component={Master} />
           </Switch>
-        </div>
+        </ScrollToTop>
       </Router>
 
     </div>

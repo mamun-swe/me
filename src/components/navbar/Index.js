@@ -4,8 +4,9 @@ import { Icon } from 'react-icons-kit'
 import { navicon } from 'react-icons-kit/ionicons'
 import { Images } from '../../utils/Images'
 
-const Index = () => {
+const Index = (props) => {
     const [scrolled, setScrolled] = useState(true)
+    const [show, setShow] = useState(false)
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -30,22 +31,34 @@ const Index = () => {
                             <div className="desktop-items d-flex justify-content-center w-100">
                                 <div>
                                     <ul>
-                                        <li><button
-                                            type="button"
-                                            className="btn shadow-none"
-                                        >Home</button></li>
-                                        <li><button
-                                            type="button"
-                                            className="btn shadow-none"
-                                        >About</button></li>
-                                        <li><button
-                                            type="button"
-                                            className="btn shadow-none"
-                                        >Skills</button></li>
-                                        <li><button
-                                            type="button"
-                                            className="btn shadow-none"
-                                        >Portfolio</button></li>
+                                        <li>
+                                            <button
+                                                type="button"
+                                                className="btn shadow-none"
+                                                onClick={props.home}
+                                            >Home</button>
+                                        </li>
+                                        <li>
+                                            <button
+                                                type="button"
+                                                className="btn shadow-none"
+                                                onClick={props.about}
+                                            >About</button>
+                                        </li>
+                                        <li>
+                                            <button
+                                                type="button"
+                                                className="btn shadow-none"
+                                                onClick={props.skill}
+                                            >Skills</button>
+                                        </li>
+                                        <li>
+                                            <button
+                                                type="button"
+                                                className="btn shadow-none"
+                                                onClick={props.portfolio}
+                                            >Portfolio</button>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -53,14 +66,25 @@ const Index = () => {
                             <div className="menu-bar-container d-lg-none text-right ml-auto">
                                 <button
                                     type="button"
-                                    className="btn shadow-none rounded-circle">
+                                    className="btn shadow-none rounded-circle"
+                                    onClick={() => setShow(true)}
+                                >
                                     <Icon icon={navicon} size={28} />
                                 </button>
                             </div>
                         </div>
 
-                        {/* Mobile navbar */}
-                        <div></div>
+                        {/* Mobile drawer */}
+                        <div className="mobile-drawer d-lg-none">
+                            <div className={show ? "backdrop open-backdrop" : "backdrop"} onClick={() => setShow(!show)}>
+                                <div className="flex-center flex-column">
+                                    <button type="button" className="btn shadow-none" onClick={props.home}>Home</button>
+                                    <button type="button" className="btn shadow-none" onClick={props.about}>About</button>
+                                    <button type="button" className="btn shadow-none" onClick={props.skill}>Skills</button>
+                                    <button type="button" className="btn shadow-none" onClick={props.portfolio}>Portfolio</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -60,6 +60,36 @@
             }
         }
     }
+
+    // Mobile drawer
+    .mobile-drawer {
+        .backdrop {
+            position: fixed;
+            top: 0;
+            left: 0%;
+            width: 100vw;
+            height: 100vh;
+            z-index: 99999;
+            overflow-y: auto;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+            background: rgba(0, 0, 0, 0.938);
+
+            .btn {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+        }
+
+        .open-backdrop {
+            visibility: visible !important;
+            opacity: 1 !important;
+            transition-delay: 0.3s !important;
+        }
+    }
 }
 
 // Fixed navbar after scroll

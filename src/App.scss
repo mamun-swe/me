@@ -30,3 +30,7 @@ $secondary: rgba(255, 255, 255, 0.781);
     -webkit-box-direction: normal !important;
     flex-direction: column !important;
 }
+
+html {
+    scroll-behavior: smooth;
+}

@@ -5,7 +5,7 @@ import { github } from 'react-icons-kit/feather'
 import { link } from 'react-icons-kit/ikons'
 import { Images } from '../../utils/Images'
 
-const Index = () => {
+const Index = (props) => {
     const projects = [
         {
             title: 'EazyBest',
@@ -51,7 +51,7 @@ const Index = () => {
 
 
     return (
-        <div className="custom-portfolio-container">
+        <div className="custom-portfolio-container" ref={props.refProp}>
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center text-lg-left mb-4">

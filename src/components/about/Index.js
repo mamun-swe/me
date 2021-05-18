@@ -1,10 +1,11 @@
 import React from 'react'
 import './style.scss'
 import { Images } from '../../utils/Images'
+import MyResume from '../../Abdullah_Al_Mamun.pdf'
 
-const Index = () => {
+const Index = (props) => {
     return (
-        <div className="custom-about-section">
+        <div className="custom-about-section" ref={props.refProp}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -22,8 +23,17 @@ const Index = () => {
                                     I have learned different programming languages in my university courses such as C, Java, Python, PHP, JavaScript, etc. Mainly I'm working with JavaScript and it's frameworks.
                                     I am available for any kind of job opportunity that suits my interests.</p>
 
-                                    <button type="button" className="btn shadow-none resume-btn">My Resume</button>
-                                    <button type="button" className="btn shadow-none ml-3 about-btn">My Skills</button>
+                                    <a
+                                        type="button"
+                                        href={MyResume}
+                                        download="Abdullah_Al_Mamun.pdf"
+                                        className="btn shadow-none resume-btn"
+                                    >My Resume</a>
+                                    <button
+                                        type="button"
+                                        className="btn shadow-none ml-3 about-btn"
+                                        onClick={props.skill}
+                                    >My Skills</button>
                                 </div>
                             </div>
                         </div>

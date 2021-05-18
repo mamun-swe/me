@@ -3,10 +3,11 @@ import './style.scss'
 import { Icon } from 'react-icons-kit'
 import { linkedin } from 'react-icons-kit/ikons'
 import { socialGithub } from 'react-icons-kit/ionicons'
+import MyResume from '../../Abdullah_Al_Mamun.pdf'
 
-const Index = () => {
+const Index = (props) => {
     return (
-        <div className="custom-header">
+        <div className="custom-header" ref={props.refProp}>
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center text-lg-left">
@@ -37,8 +38,17 @@ const Index = () => {
                             </div>
                         </div>
 
-                        <button type="button" className="btn shadow-none resume-btn">My Resume</button>
-                        <button type="button" className="btn shadow-none ml-3 about-btn">About Me</button>
+                        <a
+                            type="button"
+                            href={MyResume}
+                            download="Abdullah_Al_Mamun.pdf"
+                            className="btn shadow-none resume-btn"
+                        >My Resume</a>
+                        <button
+                            type="button"
+                            className="btn shadow-none ml-3 about-btn"
+                            onClick={props.about}
+                        >About Me</button>
                     </div>
                 </div>
             </div>
