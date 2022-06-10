@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/me/static/css/main.cad789bb.chunk.css",
-    "main.js": "/me/static/js/main.ba8a21fe.chunk.js",
-    "main.js.map": "/me/static/js/main.ba8a21fe.chunk.js.map",
+    "main.js": "/me/static/js/main.0c9f44c4.chunk.js",
+    "main.js.map": "/me/static/js/main.0c9f44c4.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.84fecc3a.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.84fecc3a.js.map",
     "static/js/2.c0aa1904.chunk.js": "/me/static/js/2.c0aa1904.chunk.js",
@@ -10,13 +10,13 @@
     "index.html": "/me/index.html",
     "static/css/main.cad789bb.chunk.css.map": "/me/static/css/main.cad789bb.chunk.css.map",
     "static/js/2.c0aa1904.chunk.js.LICENSE.txt": "/me/static/js/2.c0aa1904.chunk.js.LICENSE.txt",
-    "static/media/Abdullah_Al_Mamun.9db5ebb5.pdf": "/me/static/media/Abdullah_Al_Mamun.9db5ebb5.pdf",
+    "static/media/Abdullah_Al_Mamun.a1ccf47f.pdf": "/me/static/media/Abdullah_Al_Mamun.a1ccf47f.pdf",
     "static/media/mamun.2131b476.JPG": "/me/static/media/mamun.2131b476.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.84fecc3a.js",
     "static/js/2.c0aa1904.chunk.js",
     "static/css/main.cad789bb.chunk.css",
-    "static/js/main.ba8a21fe.chunk.js"
+    "static/js/main.0c9f44c4.chunk.js"
   ]
 }
