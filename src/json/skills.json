@@ -1,0 +1,200 @@
+[
+    {
+        "title": "Programming",
+        "children": [
+            {
+                "title": "C",
+                "growth": 90
+            },
+            {
+                "title": "JavaScript",
+                "growth": 90
+            },
+            {
+                "title": "TypeScript",
+                "growth": 80
+            },
+            {
+                "title": "PHP",
+                "growth": 60
+            },
+            {
+                "title": "Python",
+                "growth": 40
+            }
+        ]
+    },
+    {
+        "title": "Backend",
+        "children": [
+            {
+                "title": "Express.js",
+                "growth": 90
+            },
+            {
+                "title": "Nest.js",
+                "growth": 70
+            },
+            {
+                "title": "Fastify.js",
+                "growth": 50
+            },
+            {
+                "title": "GraphQL",
+                "growth": 60
+            },
+            {
+                "title": "Laravel",
+                "growth": 65
+            },
+            {
+                "title": "Jest",
+                "growth": 65
+            },
+            {
+                "title": "Socket.io",
+                "growth": 70
+            },
+            {
+                "title": "RabbitMQ",
+                "growth": 80
+            },
+            {
+                "title": "Elasticsearch",
+                "growth": 55
+            },
+            {
+                "title": "JSON",
+                "growth": 95
+            },
+            {
+                "title": "Microservices",
+                "growth": 85
+            },
+            {
+                "title": "gRPC",
+                "growth": 65
+            }
+        ]
+    },
+    {
+        "title": "Frontend",
+        "children": [
+            {
+                "title": "React.js",
+                "growth": 90
+            },
+            {
+                "title": "Next.js",
+                "growth": 90
+            },
+            {
+                "title": "CSS",
+                "growth": 85
+            },
+            {
+                "title": "TailwindCSS",
+                "growth": 85
+            },
+            {
+                "title": "SASS",
+                "growth": 65
+            }
+        ]
+    },
+    {
+        "title": "Database",
+        "children": [
+            {
+                "title": "MongoDB",
+                "growth": 95
+            },
+            {
+                "title": "Redis",
+                "growth": 95
+            },
+            {
+                "title": "MySQL",
+                "growth": 65
+            },
+            {
+                "title": "Microsoft SQL Server",
+                "growth": 55
+            }
+        ]
+    },
+    {
+        "title": "Cloud",
+        "children": [
+            {
+                "title": "AWS",
+                "growth": 75
+            },
+            {
+                "title": "SNS",
+                "growth": 70
+            },
+            {
+                "title": "SQS",
+                "growth": 70
+            },
+            {
+                "title": "S3",
+                "growth": 75
+            },
+            {
+                "title": "ECR",
+                "growth": 95
+            },
+            {
+                "title": "ECS",
+                "growth": 95
+            },
+            {
+                "title": "EC2",
+                "growth": 80
+            },
+            {
+                "title": "Lightsail",
+                "growth": 95
+            },
+            {
+                "title": "AWS App Runner",
+                "growth": 95
+            },
+            {
+                "title": "Load Balancer",
+                "growth": 95
+            },
+            {
+                "title": "CloudWatch",
+                "growth": 85
+            }
+        ]
+    },
+    {
+        "title": "DevOps",
+        "children": [
+            {
+                "title": "Docker",
+                "growth": 85
+            },
+            {
+                "title": "CI/CD",
+                "growth": 95
+            },
+            {
+                "title": "Load Balancing",
+                "growth": 90
+            },
+            {
+                "title": "PM2",
+                "growth": 75
+            }
+        ]
+    },
+    {
+        "title": "Tools",
+        "children": []
+    }
+]
