@@ -1,22 +1,16 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.cad789bb.chunk.css",
-    "main.js": "/me/static/js/main.6b9a3f87.chunk.js",
-    "main.js.map": "/me/static/js/main.6b9a3f87.chunk.js.map",
-    "runtime-main.js": "/me/static/js/runtime-main.84fecc3a.js",
-    "runtime-main.js.map": "/me/static/js/runtime-main.84fecc3a.js.map",
-    "static/js/2.c0aa1904.chunk.js": "/me/static/js/2.c0aa1904.chunk.js",
-    "static/js/2.c0aa1904.chunk.js.map": "/me/static/js/2.c0aa1904.chunk.js.map",
+    "main.css": "/me/static/css/main.e0a62eab.css",
+    "main.js": "/me/static/js/main.42448350.js",
+    "static/media/graduation.jpg": "/me/static/media/graduation.69126b342c100591de6f.jpg",
+    "static/media/Abdullah_Al_Mamun.pdf": "/me/static/media/Abdullah_Al_Mamun.a30d53c1d4355a46bd41.pdf",
+    "static/media/grapmart.png": "/me/static/media/grapmart.da604f095e7256f8b8b7.png",
     "index.html": "/me/index.html",
-    "static/css/main.cad789bb.chunk.css.map": "/me/static/css/main.cad789bb.chunk.css.map",
-    "static/js/2.c0aa1904.chunk.js.LICENSE.txt": "/me/static/js/2.c0aa1904.chunk.js.LICENSE.txt",
-    "static/media/Abdullah_Al_Mamun.bfbd8058.pdf": "/me/static/media/Abdullah_Al_Mamun.bfbd8058.pdf",
-    "static/media/mamun.2131b476.JPG": "/me/static/media/mamun.2131b476.JPG"
+    "main.e0a62eab.css.map": "/me/static/css/main.e0a62eab.css.map",
+    "main.42448350.js.map": "/me/static/js/main.42448350.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.84fecc3a.js",
-    "static/js/2.c0aa1904.chunk.js",
-    "static/css/main.cad789bb.chunk.css",
-    "static/js/main.6b9a3f87.chunk.js"
+    "static/css/main.e0a62eab.css",
+    "static/js/main.42448350.js"
   ]
 }
