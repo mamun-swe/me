@@ -2,33 +2,33 @@
     {
         "title": "React country select component",
         "description": "A country select dropdown component for React.js with each country flag.",
-        "stack": "JavaScript, HTML, CSS",
+        "stack": "JavaScript, HTML, CSS, NPM",
         "banner": "npm-package.png",
         "github": "https://github.com/Mamun-swe/react-country-select-component",
         "website": "https://www.npmjs.com/package/react-country-select-component"
     },
     {
-        "title": "react-country-select-component",
-        "description": "A country select dropdown component for React.js with each country flag.",
-        "stack": "JavaScript, HTML, CSS",
-        "banner": "npm-package.png",
+        "title": "STOREX",
+        "description": "Storex is a store management opensource API platform for web and mobile apps developers.",
+        "stack": "TypeScript, Express.js, EJS, Node.js, MongoDB, REST API, HTML, CSS",
+        "banner": "storex.png",
+        "github": "https://github.com/mamun-swe/storexapi",
+        "website": ""
+    },
+    {
+        "title": "GrapMart",
+        "description": "GrapMart is a single-vendor online food & groceries delivery service.",
+        "stack": "JavaScript, React.js, TailwindCSS, PHP, Laravel, MySQL, Microservice, AWS",
+        "banner": "grapmart.png",
         "github": "https://github.com/Mamun-swe/react-country-select-component",
         "website": "https://www.npmjs.com/package/react-country-select-component"
     },
     {
-        "title": "react-country-select-component",
-        "description": "A country select dropdown component for React.js with each country flag.",
-        "stack": "JavaScript, HTML, CSS",
-        "banner": "npm-package.png",
-        "github": "https://github.com/Mamun-swe/react-country-select-component",
-        "website": "https://www.npmjs.com/package/react-country-select-component"
-    },
-    {
-        "title": "react-country-select-component",
-        "description": "A country select dropdown component for React.js with each country flag.",
-        "stack": "JavaScript, HTML, CSS",
-        "banner": "",
-        "github": "https://github.com/Mamun-swe/react-country-select-component",
-        "website": "https://www.npmjs.com/package/react-country-select-component"
+        "title": "Auth microservice",
+        "description": "An auth microservice for user account creation and verification access token.",
+        "stack": "JavaScript, Node.js, Express.js, MongoDB, REST API, Microservice",
+        "banner": "auth.png",
+        "github": "https://github.com/mamun-swe/auth.service",
+        "website": "https://documenter.getpostman.com/view/5909130/UVXgKwr1"
     }
 ]

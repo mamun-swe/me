@@ -195,6 +195,39 @@
     },
     {
         "title": "Tools",
-        "children": []
+        "children": [
+            {
+                "title": "Git",
+                "growth": 95
+            },
+            {
+                "title": "Github",
+                "growth": 90
+            },
+            {
+                "title": "Bitbucket",
+                "growth": 65
+            },
+            {
+                "title": "Trello",
+                "growth": 90
+            },
+            {
+                "title": "Jira",
+                "growth": 75
+            },
+            {
+                "title": "Postman",
+                "growth": 90
+            },
+            {
+                "title": "Swagger",
+                "growth": 70
+            },
+            {
+                "title": "VS Code",
+                "growth": 95
+            }
+        ]
     }
 ]

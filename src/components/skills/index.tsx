@@ -7,7 +7,13 @@ import { SectionTitle } from "components/section-title";
 
 const items: ISkill[] = skillsData;
 
-export const Skills: React.FC = (): JSX.Element => {
+type PropsTypes = {
+  refProp: any;
+};
+
+export const Skills: React.FC<PropsTypes> = (
+  props: PropsTypes
+): JSX.Element => {
   const [selected, setSelected] = useState<string>(items[0].title);
   const [selectedSkills, setSelectedSkills] = useState<ISkillChildren[]>(
     items[0].children
@@ -21,7 +27,7 @@ export const Skills: React.FC = (): JSX.Element => {
   };
 
   return (
-    <div className="py-20 lg:py-28">
+    <div className="py-20 lg:py-28" ref={props.refProp}>
       <div className="container mx-auto px-6 sm:px-0">
         <div className="mb-4 text-center lg:text-left">
           <SectionTitle title="My Skill's" />

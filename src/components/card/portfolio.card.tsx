@@ -18,47 +18,50 @@ export const PortfolioCard: React.FC<IPortfolio> = (
         </div>
       ) : null}
 
-      {/* Content */}
-      <div className="p-4 pb-0">
-        <a
-          href="/#"
-          target="_blank"
-          className="text-2xl font-bold text-secondary transition-all group-hover:text-primary"
-        >
-          {props.title}
-        </a>
-
-        <p className="leading-relaxed text-sm my-3 text-secondary">
-          {props.description}
-        </p>
-        <p className="leading-relaxed text-sm text-secondary">
-          <span className="font-bold text-primary">Stacks: </span>
-          {props.stack}
-        </p>
-      </div>
-
-      {/* Github & Website */}
-      <div className="p-4">
-        <div className="inline-flex gap-1">
+      <div className="h-[260px] relative">
+        {/* Content */}
+        <div className="p-4 pb-0">
           <a
             href={props.github}
             target="_blank"
             rel="noreferrer"
-            className="p-2 rounded-full transition-all hover:text-white text-secondary bg-[#111a28]"
+            className="text-2xl font-bold text-secondary transition-all group-hover:text-primary"
           >
-            <RiGithubLine size={20} />
+            {props.title}
           </a>
 
-          {props.website ? (
+          <p className="leading-relaxed text-sm my-3 text-secondary">
+            {props.description}
+          </p>
+          <p className="leading-relaxed text-sm text-secondary">
+            <span className="font-bold text-primary">Stacks: </span>
+            {props.stack}
+          </p>
+        </div>
+
+        {/* Github & Website */}
+        <div className="p-4 absolute inset-x-0 bottom-0">
+          <div className="inline-flex gap-1">
             <a
-              href={props.website}
+              href={props.github}
               target="_blank"
               rel="noreferrer"
               className="p-2 rounded-full transition-all hover:text-white text-secondary bg-[#111a28]"
             >
-              <FiExternalLink size={20} />
+              <RiGithubLine size={20} />
             </a>
-          ) : null}
+
+            {props.website ? (
+              <a
+                href={props.website}
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 rounded-full transition-all hover:text-white text-secondary bg-[#111a28]"
+              >
+                <FiExternalLink size={20} />
+              </a>
+            ) : null}
+          </div>
         </div>
       </div>
     </div>

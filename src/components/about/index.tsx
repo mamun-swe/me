@@ -1,10 +1,16 @@
 import { Images } from "utils/images";
 import { PrimaryButton } from "components/button";
 import { SectionTitle } from "components/section-title";
+import { resumeView } from "utils/helper";
 
-export const About: React.FC = (): JSX.Element => {
+type PropsTypes = {
+  refProp: any;
+  skill: () => void;
+};
+
+export const About: React.FC<PropsTypes> = (props: PropsTypes): JSX.Element => {
   return (
-    <div className="py-20 lg:py-28">
+    <div className="py-20 lg:py-28" ref={props.refProp}>
       <div className="container mx-auto px-6 sm:px-0">
         <div className="mb-4 text-center lg:text-left">
           <SectionTitle title="About" />
@@ -56,10 +62,13 @@ export const About: React.FC = (): JSX.Element => {
 
             {/* Button group */}
             <div className="flex justify-center lg:justify-start gap-4">
-              <PrimaryButton type="button" filled>
+              <PrimaryButton type="button" filled onClick={() => resumeView()}>
                 My Resume
               </PrimaryButton>
-              <PrimaryButton type="button">My Skill's</PrimaryButton>
+
+              <PrimaryButton type="button" onClick={props.skill}>
+                My Skill's
+              </PrimaryButton>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ type ButtonPropsTypes = {
   type: "button" | "submit";
   children: ReactNode;
   filled?: boolean;
+  onClick?: () => void;
 };
 
 export const PrimaryButton: React.FC<ButtonPropsTypes> = (
@@ -18,6 +19,7 @@ export const PrimaryButton: React.FC<ButtonPropsTypes> = (
           ? "text-base font-semibold px-8 py-[10px] rounded bg-primary"
           : "text-base font-semibold px-8 py-[10px] rounded border-2 border-primary text-white bg-themedark"
       }
+      onClick={props.onClick}
     >
       {props.children}
     </button>

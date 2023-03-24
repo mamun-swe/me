@@ -1,33 +1,25 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Images } from "utils/images";
 import { AiOutlineMenu } from "react-icons/ai";
+import { MobileNavModal } from "components/modal/mobile.nav-modal";
 
-export const Navbar: React.FC = (): JSX.Element => {
-  const [scrolled, setScrolled] = useState<boolean>(true);
+type NavbarPropsTypes = {
+  home: () => void;
+  about: () => void;
+  skill: () => void;
+  portfolio: () => void;
+};
+
+export const Navbar: React.FC<NavbarPropsTypes> = (
+  props: NavbarPropsTypes
+): JSX.Element => {
   const [show, setShow] = useState<boolean>(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      let isTop = window.scrollY < 150;
-      if (isTop !== true) {
-        setScrolled(false);
-      } else {
-        setScrolled(true);
-      }
-    });
-  }, []);
 
   /* handle menu toogle */
   const handleMenuToggle = () => setShow(!show);
 
   return (
-    <div
-      className={
-        scrolled
-          ? "w-full p-4 lg:p-5 bg-themedark z-50"
-          : "w-full p-4 lg:p-5 bg-themedark scrolled shadow-md z-50"
-      }
-    >
+    <div className={"p-4 lg:p-5 bg-themedark fixed top-0 left-0 w-full z-40"}>
       <div className="container mx-auto">
         <div className="flex">
           <div className="flex-none">
@@ -37,11 +29,10 @@ export const Navbar: React.FC = (): JSX.Element => {
             <div className="grid justify-items-end">
               <div className="hidden lg:block">
                 <div className="inline-flex place-items-center gap-4">
-                  <NavigateButton title="Home" />
-                  <NavigateButton title="About" />
-                  <NavigateButton title="Skill's" />
-                  <NavigateButton title="Experience's" />
-                  <NavigateButton title="Portfolio" />
+                  <NavigateButton title="Home" onClick={props.home} />
+                  <NavigateButton title="About" onClick={props.about} />
+                  <NavigateButton title="Skill's" onClick={props.skill} />
+                  <NavigateButton title="Portfolio" onClick={props.portfolio} />
                 </div>
               </div>
               <div className="lg:hidden ml-auto pt-[2px]">
@@ -51,6 +42,28 @@ export const Navbar: React.FC = (): JSX.Element => {
           </div>
         </div>
       </div>
+
+      {/* Navbar in mobile */}
+      <MobileNavModal
+        open={show}
+        onHide={handleMenuToggle}
+        homeClick={() => {
+          handleMenuToggle();
+          props.home();
+        }}
+        aboutClick={() => {
+          handleMenuToggle();
+          props.about();
+        }}
+        skillClick={() => {
+          handleMenuToggle();
+          props.skill();
+        }}
+        portfolioClick={() => {
+          handleMenuToggle();
+          props.portfolio();
+        }}
+      />
     </div>
   );
 };
@@ -58,6 +71,7 @@ export const Navbar: React.FC = (): JSX.Element => {
 /* Navigate button */
 type NavigationButtonProps = {
   title: string;
+  onClick: () => void;
 };
 const NavigateButton: React.FC<NavigationButtonProps> = (
   props: NavigationButtonProps
@@ -66,6 +80,7 @@ const NavigateButton: React.FC<NavigationButtonProps> = (
     <button
       type="button"
       className="px-4 py-3 transition-all uppercase text-base text-secondary hover:text-white"
+      onClick={props.onClick}
     >
       {props.title}
     </button>

@@ -2,6 +2,7 @@
 import { PrimaryButton } from "components/button";
 import { AiOutlineGithub } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
+import socialLinks from "json/social-link.json";
 
 export const Footer: React.FC = (): JSX.Element => {
   return (
@@ -15,7 +16,13 @@ export const Footer: React.FC = (): JSX.Element => {
                 would be beneficial to them. Please inform if you're looking for
                 someone similar to me. You may also simply say hello to me.
               </p>
-              <PrimaryButton type="button" filled children="Contact Me" />
+              <a
+                type="button"
+                href="mailto:mamun.swe.277@gmail.com"
+                className="btn shadow-none"
+              >
+                <PrimaryButton type="button" filled children="Contact Me" />
+              </a>
             </div>
             <div className="p-3">
               <ContactContainer
@@ -30,10 +37,10 @@ export const Footer: React.FC = (): JSX.Element => {
 
               {/* Follw me */}
               <div className="flex justify-center lg:justify-start gap-2">
-                <a href="#" target="_blank">
+                <a href={socialLinks.github} rel="noreferrer" target="_blank">
                   <AiOutlineGithub size={20} className="text-white" />
                 </a>
-                <a href="#" target="_blank">
+                <a href={socialLinks.linkedin} rel="noreferrer" target="_blank">
                   <GrLinkedinOption size={20} className="text-white" />
                 </a>
               </div>
