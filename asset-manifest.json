@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/me/static/css/main.e61a0a35.css",
-    "main.js": "/me/static/js/main.3f10515f.js",
+    "main.js": "/me/static/js/main.c512ec30.js",
     "static/media/graduation.jpg": "/me/static/media/graduation.69126b342c100591de6f.jpg",
     "static/media/Abdullah_Al_Mamun.pdf": "/me/static/media/Abdullah_Al_Mamun.939a38a155b8ee03554e.pdf",
     "static/media/grapmart.png": "/me/static/media/grapmart.da604f095e7256f8b8b7.png",
     "index.html": "/me/index.html",
     "main.e61a0a35.css.map": "/me/static/css/main.e61a0a35.css.map",
-    "main.3f10515f.js.map": "/me/static/js/main.3f10515f.js.map"
+    "main.c512ec30.js.map": "/me/static/js/main.c512ec30.js.map"
   },
   "entrypoints": [
     "static/css/main.e61a0a35.css",
-    "static/js/main.3f10515f.js"
+    "static/js/main.c512ec30.js"
   ]
 }
