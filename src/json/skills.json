@@ -32,23 +32,11 @@
                 "growth": 90
             },
             {
-                "title": "Nest.js",
-                "growth": 70
-            },
-            {
-                "title": "Fastify.js",
-                "growth": 50
-            },
-            {
                 "title": "GraphQL",
                 "growth": 60
             },
             {
                 "title": "Laravel",
-                "growth": 65
-            },
-            {
-                "title": "Jest",
                 "growth": 65
             },
             {
@@ -72,8 +60,8 @@
                 "growth": 85
             },
             {
-                "title": "gRPC",
-                "growth": 65
+                "title": "REST API",
+                "growth": 95
             }
         ]
     },

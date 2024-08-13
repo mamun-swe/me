@@ -6,12 +6,15 @@ import { Skills } from "components/skills";
 import { Portfolio } from "components/portfolio";
 import { Footer } from "components/footer";
 import { ScrollTop } from "components/scroll-top";
+import { Education } from "components/education";
+import { WorkExperience } from "components/work-experience";
 
 export const Home = () => {
   const homeRef = useRef<null | HTMLInputElement>(null);
   const aboutRef = useRef<null | HTMLDivElement>(null);
   const skillRef = useRef<null | HTMLDivElement>(null);
   const portfolioRef = useRef<null | HTMLDivElement>(null);
+  const educationRef = useRef<null | HTMLDivElement>(null);
 
   const homeScroll = () =>
     homeRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -32,9 +35,10 @@ export const Home = () => {
       />
       <Header refProp={homeRef} about={aboutScroll} />
       <About refProp={aboutRef} skill={skillScroll} />
+      <Education refProp={educationRef} />
+      <WorkExperience refProp={educationRef} />
       <Skills refProp={skillRef} />
       <Portfolio refProp={portfolioRef} />
-
       <Footer />
       <ScrollTop />
     </div>

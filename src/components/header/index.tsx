@@ -2,8 +2,9 @@
 import { PrimaryButton } from "components/button";
 import { AiOutlineGithub } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
-import socialLinks from "json/social-link.json";
+import { SiLeetcode } from "react-icons/si";
 import { resumeView } from "utils/helper";
+import socialLinks from "json/social-link.json";
 
 type PropsTypes = {
   refProp: any;
@@ -42,6 +43,9 @@ export const Header: React.FC<PropsTypes> = (
               </a>
               <a href={socialLinks.linkedin} rel="noreferrer" target="_blank">
                 <GrLinkedinOption size={20} className="text-white" />
+              </a>
+              <a href={socialLinks.leetcode} rel="noreferrer" target="_blank">
+                <SiLeetcode size={20} className="text-white" />
               </a>
             </div>
           </div>

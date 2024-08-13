@@ -1,0 +1,113 @@
+[
+    {
+        "designation": "Software Specialist",
+        "organization": "SSL Wireless",
+        "website": "https://sslwireless.com",
+        "start_from": "May 2024",
+        "end_to": "Present",
+        "location": "Dhaka, Bangladesh",
+        "responsibilities": [
+            "Working on a Fintech team to develop highly scalable Microservices and micro frontend application to manage concurrent traffic.",
+            "Optimizing Code and Business Logic Execution Complexity.",
+            "Conducted Research and Implemented Micro-Frontend Architecture.",
+            "Researched and Implemented Monorepo Architecture."
+        ],
+        "tech_stacks": [
+            "JavaScript",
+            "TypeScript",
+            "React.js",
+            "TailwindCSS",
+            "Express.js",
+            "Docker",
+            "AWS",
+            "Microservices",
+            "CI/CD",
+            "MongoDB",
+            "MySQL"
+        ]
+    },
+    {
+        "designation": "Software Engineer",
+        "organization": "GrapView",
+        "website": "https://grapview.com",
+        "start_from": "February 2023",
+        "end_to": "April 2023",
+        "location": "Dhaka, Bangladesh",
+        "responsibilities": [
+            "Worked with an agile backend team to develop highly scalable microservices.",
+            "Designing microservices using 3-tier architecture.",
+            "Designing Database for SaaS application.",
+            "Implement CI/CD pipeline to deploy microservices.",
+            "Managed concurrent traffic using RabbitMQ message broker.",
+            "Implemented microservice-based REST APIs to develop mobile applications."
+        ],
+        "tech_stacks": [
+            "JavaScript",
+            "TypeScript",
+            "React.js",
+            "TailwindCSS",
+            "Express.js",
+            "Docker"
+        ]
+    },
+    {
+        "designation": "Software Engineer",
+        "organization": "NexusLab",
+        "website": "https://www.nexuslab.net",
+        "start_from": "February 2022",
+        "end_to": "February 2023",
+        "location": "Dhaka, Bangladesh",
+        "responsibilities": [
+            "Implement, built, deployed, and developed highly available microservices from scratch.",
+            "Scaling microservices to handle easily millions of concurrent traffic.",
+            "Designing Database and Use Case diagram.",
+            "Designing APIs and Building Microservices to sync data from the various platforms.",
+            "Building inter-service communication using RabbitMQ.",
+            "Designing more APIs with Socket.io for real-time data transfer."
+        ],
+        "tech_stacks": [
+            "JavaScript",
+            "TypeScript",
+            "React.js",
+            "Next.js",
+            "TailwindCSS",
+            "Node.js",
+            "Express.js",
+            "Microservices",
+            "MongoDB",
+            "Socket.io",
+            "AWS",
+            "Docker",
+            "Git",
+            "Github",
+            "CI/CD"
+        ]
+    },
+    {
+        "designation": "Software Engineer",
+        "organization": "Colour Bangla",
+        "website": "https://www.colourbangla.com",
+        "start_from": "January 2020",
+        "end_to": "January 2022",
+        "location": "Dhaka, Bangladesh",
+        "responsibilities": [
+            "Worked as a Full-Stack developer.",
+            "Implemented, built, and deployed both backend and frontend.",
+            "Contributed to mobile developers as project lead.",
+            "Worked on REST API service with Node.js/Express.js",
+            "R & D and new feature addition collaborated with the team."
+        ],
+        "tech_stacks": [
+            "JavaScript",
+            "TypeScript",
+            "React.js",
+            "Redux",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "MySQL",
+            "Git",
+            "Github"
+        ]
+    }
+]
