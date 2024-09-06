@@ -3,10 +3,6 @@
         "title": "Programming",
         "children": [
             {
-                "title": "C",
-                "growth": 90
-            },
-            {
                 "title": "JavaScript",
                 "growth": 90
             },
@@ -28,16 +24,20 @@
         "title": "Backend",
         "children": [
             {
+                "title": "Node.js",
+                "growth": 90
+            },
+            {
                 "title": "Express.js",
                 "growth": 90
             },
             {
-                "title": "GraphQL",
-                "growth": 60
+                "title": "Flask",
+                "growth": 80
             },
             {
                 "title": "Laravel",
-                "growth": 65
+                "growth": 75
             },
             {
                 "title": "Socket.io",
@@ -46,22 +46,6 @@
             {
                 "title": "RabbitMQ",
                 "growth": 80
-            },
-            {
-                "title": "Elasticsearch",
-                "growth": 55
-            },
-            {
-                "title": "JSON",
-                "growth": 95
-            },
-            {
-                "title": "Microservices",
-                "growth": 85
-            },
-            {
-                "title": "REST API",
-                "growth": 95
             }
         ]
     },
@@ -69,24 +53,36 @@
         "title": "Frontend",
         "children": [
             {
-                "title": "React.js",
-                "growth": 90
-            },
-            {
-                "title": "Next.js",
+                "title": "HTML",
                 "growth": 90
             },
             {
                 "title": "CSS",
-                "growth": 85
+                "growth": 80
             },
             {
                 "title": "TailwindCSS",
                 "growth": 85
             },
             {
+                "title": "Bootstrap",
+                "growth": 75
+            },
+            {
                 "title": "SASS",
                 "growth": 65
+            },
+            {
+                "title": "React.js",
+                "growth": 80
+            },
+            {
+                "title": "Next.js",
+                "growth": 70
+            },
+            {
+                "title": "Electron.js",
+                "growth": 70
             }
         ]
     },
@@ -95,19 +91,19 @@
         "children": [
             {
                 "title": "MongoDB",
-                "growth": 95
-            },
-            {
-                "title": "Redis",
-                "growth": 95
+                "growth": 80
             },
             {
                 "title": "MySQL",
                 "growth": 65
             },
             {
-                "title": "Microsoft SQL Server",
-                "growth": 55
+                "title": "Redis",
+                "growth": 90
+            },
+            {
+                "title": "Elasticsearch.",
+                "growth": 60
             }
         ]
     },
@@ -116,47 +112,11 @@
         "children": [
             {
                 "title": "AWS",
-                "growth": 75
-            },
-            {
-                "title": "SNS",
                 "growth": 70
             },
             {
-                "title": "SQS",
-                "growth": 70
-            },
-            {
-                "title": "S3",
-                "growth": 75
-            },
-            {
-                "title": "ECR",
-                "growth": 95
-            },
-            {
-                "title": "ECS",
-                "growth": 95
-            },
-            {
-                "title": "EC2",
-                "growth": 80
-            },
-            {
-                "title": "Lightsail",
-                "growth": 95
-            },
-            {
-                "title": "AWS App Runner",
-                "growth": 95
-            },
-            {
-                "title": "Load Balancer",
-                "growth": 95
-            },
-            {
-                "title": "CloudWatch",
-                "growth": 85
+                "title": "Digital Ocean",
+                "growth": 60
             }
         ]
     },
@@ -165,11 +125,19 @@
         "children": [
             {
                 "title": "Docker",
-                "growth": 85
+                "growth": 80
+            },
+            {
+                "title": "GitHub Action",
+                "growth": 80
             },
             {
                 "title": "CI/CD",
-                "growth": 95
+                "growth": 80
+            },
+            {
+                "title": "NGINX",
+                "growth": 65
             },
             {
                 "title": "Load Balancing",
@@ -177,7 +145,7 @@
             },
             {
                 "title": "PM2",
-                "growth": 75
+                "growth": 90
             }
         ]
     },

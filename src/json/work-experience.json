@@ -1,52 +1,46 @@
 [
     {
+        "designation": "Research Assistant (Part-time)",
+        "organization": "Group of BiophotomatiX",
+        "website": "https://www.groupofbiophotomatix.org",
+        "start_from": "January 2023",
+        "end_to": "Present",
+        "location": "Tangail, Bangladesh",
+        "responsibilities": [
+            "Preprocess and analyze biological datasets for bioinformatics and computational biology projects.",
+            "Design and optimize machine learning and deep learning models for bioinformatics challenges.",
+            "Build and maintain scalable bioinformatics tools and computational pipelines.",
+            "Design and execute experiments to evaluate machine learning models in biological contexts."
+        ],
+        "tech_stacks": [
+            "Bioinformatics",
+            "Computational Biology",
+            "Machine Learning",
+            "Deep Learning",
+            "Federated Learning",
+            "Meta-learning"
+        ]
+    },
+    {
         "designation": "Software Specialist",
         "organization": "SSL Wireless",
         "website": "https://sslwireless.com",
         "start_from": "May 2024",
-        "end_to": "Present",
+        "end_to": "Jun 2024",
         "location": "Dhaka, Bangladesh",
         "responsibilities": [
-            "Working on a Fintech team to develop highly scalable Microservices and micro frontend application to manage concurrent traffic.",
-            "Optimizing Code and Business Logic Execution Complexity.",
-            "Conducted Research and Implemented Micro-Frontend Architecture.",
-            "Researched and Implemented Monorepo Architecture."
+            "Worked on a Fintech team to develop highly scalable microservices and a micro-frontend application to manage concurrent traffic.",
+            "Optimized code and improved business logic execution complexity.",
+            "Conducted research and implemented a micro-frontend architecture.",
+            "Researched and implemented a monorepo architecture."
         ],
         "tech_stacks": [
             "JavaScript",
             "TypeScript",
+            "Node.js",
             "React.js",
-            "TailwindCSS",
             "Express.js",
-            "Docker",
             "AWS",
-            "Microservices",
-            "CI/CD",
-            "MongoDB",
-            "MySQL"
-        ]
-    },
-    {
-        "designation": "Software Engineer",
-        "organization": "GrapView",
-        "website": "https://grapview.com",
-        "start_from": "February 2023",
-        "end_to": "April 2023",
-        "location": "Dhaka, Bangladesh",
-        "responsibilities": [
-            "Worked with an agile backend team to develop highly scalable microservices.",
-            "Designing microservices using 3-tier architecture.",
-            "Designing Database for SaaS application.",
-            "Implement CI/CD pipeline to deploy microservices.",
-            "Managed concurrent traffic using RabbitMQ message broker.",
-            "Implemented microservice-based REST APIs to develop mobile applications."
-        ],
-        "tech_stacks": [
-            "JavaScript",
-            "TypeScript",
-            "React.js",
-            "TailwindCSS",
-            "Express.js",
             "Docker"
         ]
     },
@@ -55,28 +49,29 @@
         "organization": "NexusLab",
         "website": "https://www.nexuslab.net",
         "start_from": "February 2022",
-        "end_to": "February 2023",
+        "end_to": "April 2023",
         "location": "Dhaka, Bangladesh",
         "responsibilities": [
-            "Implement, built, deployed, and developed highly available microservices from scratch.",
-            "Scaling microservices to handle easily millions of concurrent traffic.",
-            "Designing Database and Use Case diagram.",
-            "Designing APIs and Building Microservices to sync data from the various platforms.",
-            "Building inter-service communication using RabbitMQ.",
-            "Designing more APIs with Socket.io for real-time data transfer."
+            "Implemented, built, deployed, and developed highly available microservices from scratch.",
+            "Scaled microservices to handle millions of concurrent traffic.",
+            "Designed database schema and use case diagrams.",
+            "Designed APIs and built microservices to sync data from various platforms.",
+            "Built inter-service communication using RabbitMQ.",
+            "Designed additional APIs with Socket.io for real-time data transfer."
         ],
         "tech_stacks": [
             "JavaScript",
             "TypeScript",
             "React.js",
             "Next.js",
-            "TailwindCSS",
             "Node.js",
             "Express.js",
-            "Microservices",
-            "MongoDB",
             "Socket.io",
-            "AWS",
+            "MongoDB",
+            "Redis",
+            "RabbitMQ",
+            "REST API",
+            "Microservices",
             "Docker",
             "Git",
             "Github",
@@ -91,21 +86,18 @@
         "end_to": "January 2022",
         "location": "Dhaka, Bangladesh",
         "responsibilities": [
-            "Worked as a Full-Stack developer.",
-            "Implemented, built, and deployed both backend and frontend.",
-            "Contributed to mobile developers as project lead.",
-            "Worked on REST API service with Node.js/Express.js",
-            "R & D and new feature addition collaborated with the team."
+            "Implemented, built, and deployed backend and frontend applications.",
+            "Developed REST API services using Express.js.",
+            "Collaborated with the team on R&D and new feature additions."
         ],
         "tech_stacks": [
             "JavaScript",
-            "TypeScript",
-            "React.js",
-            "Redux",
             "Node.js",
             "Express.js",
+            "React.js",
+            "Next.js",
+            "Redux",
             "MongoDB",
-            "MySQL",
             "Git",
             "Github"
         ]

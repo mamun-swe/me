@@ -1,13 +1,5 @@
 [
     {
-        "title": "XeroLink",
-        "description": "XeroLink is the simplest link organizer that keeps all of your favorite connections in one place.",
-        "stack": "TypeScript, Express.js, Node.js, MongoDB, REST API, React.js, TailwindCSS, Cloud Server, CI/CD, Vercel, Render",
-        "banner": "xerolink.png",
-        "github": "https://github.com/mamun-swe/xerolink",
-        "website": "https://xerolink.vercel.app"
-    },
-    {
         "title": "React country select component",
         "description": "A country select dropdown component for React.js with each country flag.",
         "stack": "JavaScript, HTML, CSS, NPM",
@@ -24,12 +16,12 @@
         "website": "https://grapmart.com"
     },
     {
-        "title": "Children Journey",
-        "description": "Children Journey is a LMS website for childcare.",
-        "stack": "JavaScript, React.js, TailwindCSS, PHP, Laravel, MySQL",
-        "banner": "children-journey.png",
-        "github": "https://github.com/mamun-swe/childrenjourney.com",
-        "website": "https://www.childrenjourney.com"
+        "title": "XTOLET",
+        "description": "Property finder application that helps users find nearby rental properties.",
+        "stack": "JavaScript, React.js, TailwindCSS, Express.js, PHP, Laravel, MongoDB, MySQL, Microservice, AWS",
+        "banner": "xtolet.png",
+        "github": "",
+        "website": "https://xtolet.vercel.app"
     },
     {
         "title": "Group of BiophotomatiX",
@@ -40,12 +32,28 @@
         "website": "https://biophotomatix.vercel.app"
     },
     {
+        "title": "Children Journey",
+        "description": "Children Journey is a LMS website for childcare.",
+        "stack": "JavaScript, React.js, TailwindCSS, PHP, Laravel, MySQL",
+        "banner": "children-journey.png",
+        "github": "https://github.com/mamun-swe/childrenjourney.com",
+        "website": "https://www.childrenjourney.com"
+    },
+    {
         "title": "STOREX",
         "description": "Storex is a store management opensource API platform for web and mobile apps developers.",
         "stack": "TypeScript, Express.js, EJS, Node.js, MongoDB, REST API, HTML, CSS",
         "banner": "storex.png",
         "github": "https://github.com/mamun-swe/storexapi",
         "website": ""
+    },
+    {
+        "title": "XeroLink",
+        "description": "XeroLink is the simplest link organizer that keeps all of your favorite connections in one place.",
+        "stack": "TypeScript, Express.js, Node.js, MongoDB, REST API, React.js, TailwindCSS, Cloud Server, CI/CD, Vercel, Render",
+        "banner": "xerolink.png",
+        "github": "https://github.com/mamun-swe/xerolink",
+        "website": "https://xerolink.vercel.app"
     },
     {
         "title": "Auth microservice",
